@@ -1,0 +1,11 @@
+document.addEventListener('DOMContentLoaded', () => {
+  console.log('Página cargada correctamente 🎉');
+
+  // Ejemplo: interceptar envío del formulario
+  const form = document.querySelector('form');
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    alert('Gracias por tu mensaje, ¡pronto te contactaré!');
+    form.reset();
+  });
+});

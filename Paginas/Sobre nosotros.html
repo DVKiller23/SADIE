@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sobre Nosotros – SADIE Ingeniería</title>
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;}
+
+    body{
+      font-family:'Segoe UI',sans-serif;
+      background:#f0f4f8;
+      color:#333;
+      line-height:1.6;
+    }
+
+    /* ───────── Barra fija superior ───────── */
+    .top-bar{
+      background:#181818;
+      color:#fff;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:1rem 2rem;
+      position:sticky;
+      top:0;
+      z-index:1000;
+    }
+    .top-bar h1{font-size:1.5rem;}
+    .top-bar .slogan{font-size:.8rem;color:#bbb;}
+    .top-bar nav{display:flex;gap:1.5rem;}
+    .top-bar nav a{
+      color:#fff;text-decoration:none;font-size:1rem;
+      transition:color .3s;
+    }
+    .top-bar nav a:hover{color:#90caf9;}
+
+    /* ───────── Encabezado azul ───────── */
+    header{
+      background:#0d47a1;
+      color:#fff;
+      padding:2rem 1rem;
+      text-align:center;
+      /* ¡Ya sin margin-top! */
+    }
+    header h2{font-size:2rem;margin-bottom:.5rem;}
+
+    .container{max-width:1100px;margin:auto;padding:2rem 1rem;}
+
+    section{
+      background:#fff;
+      padding:2rem;
+      margin-bottom:2rem;
+      border-radius:12px;
+      box-shadow:0 4px 12px rgba(0,0,0,.1);
+    }
+    section h2{color:#0d47a1;margin-bottom:1rem;}
+    ul{padding-left:1.5rem;}
+
+    /* ───────── Clientes ───────── */
+    .clientes-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+      gap:1rem;margin-top:1rem;
+    }
+    .cliente-logo{
+      background:#f9f9f9;padding:1rem;border-radius:10px;
+      text-align:center;box-shadow:0 2px 6px rgba(0,0,0,.05);
+    }
+    .cliente-logo img{max-width:100%;max-height:100px;object-fit:contain;}
+
+    footer{
+      background:#0d47a1;color:#fff;text-align:center;
+      padding:1rem;font-size:.9rem;
+    }
+
+    /* ───────── Responsivo ───────── */
+    @media(max-width:600px){
+      .top-bar{flex-direction:column;align-items:flex-start;}
+      .top-bar nav{margin-top:.5rem;flex-wrap:wrap;}
+      header h2{font-size:1.6rem;}
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Barra superior fija -->
+  <div class="top-bar">
+    <div>
+      <h1>SADIE Ingeniería</h1>
+      <div class="slogan">ESLOGANS</div>
+    </div>
+    <nav>
+      <a href="/Inicio2.1.html">Inicio</a>
+      <a href="#acerca">Sobre nosotros</a>
+      <a href="#">Innovación</a>
+      <a href="#">Contacto</a>
+    </nav>
+  </div>
+
+  <!-- Encabezado principal -->
+  <header>
+    <h2>Conoce quiénes somos, lo que hacemos y con quién trabajamos</h2>
+  </header>
+
+  <div class="container">
+
+    <section id="acerca">
+      <h2>Acerca de Nosotros</h2>
+      <p>
+        Somos una empresa comprometida con la innovación y la calidad en el sector de automatización industrial. Nuestro objetivo es brindar soluciones prácticas y efectivas que ayuden a nuestros clientes a alcanzar sus metas productivas y tecnológicas.
+      </p>
+    </section>
+
+    <section id="mision">
+      <h2>Misión</h2>
+      <p>
+        Ofrecer servicios y productos que generen valor agregado a nuestros clientes mediante procesos eficientes, seguros y sustentables.
+      </p>
+    </section>
+
+    <section id="vision">
+      <h2>Visión</h2>
+      <p>
+        Ser una empresa líder a nivel nacional, reconocida por su innovación, excelencia operativa y compromiso con el desarrollo sostenible.
+      </p>
+    </section>
+
+    <section id="servicios">
+      <h2>Servicios que Ofrecemos</h2>
+      <ul>
+        <li>Desarrollo de sistemas automatizados</li>
+        <li>Integración de maquinaria industrial</li>
+        <li>Diseño de soluciones a medida</li>
+        <li>Consultoría técnica especializada</li>
+      </ul>
+    </section>
+
+    <section id="maquinas">
+      <h2>Nuestras Máquinas y Equipos</h2>
+      <ul>
+        <li>Centro de maquinado CNC HAAS</li>
+        <li>Robot KUKA de 6 ejes</li>
+        <li>Sistema de visión Cognex</li>
+        <li>PLC Siemens S7‑1500</li>
+      </ul>
+    </section>
+
+    <section id="clientes">
+      <h2>Nuestros Clientes</h2>
+      <p>Estas son algunas de las empresas que han confiado en nosotros:</p>
+      <div class="clientes-grid">
+        <div class="cliente-logo"><img src="cliente1.png" alt="Cliente 1"></div>
+        <div class="cliente-logo"><img src="cliente2.png" alt="Cliente 2"></div>
+        <div class="cliente-logo"><img src="cliente3.png" alt="Cliente 3"></div>
+        <div class="cliente-logo"><img src="cliente4.png" alt="Cliente 4"></div>
+      </div>
+    </section>
+
+  </div>
+
+  <footer>
+    © 2025 SADIE Ingeniería – Todos los derechos reservados.
+  </footer>
+
+</body>
+</html>
